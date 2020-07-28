@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home - James Gallagher</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <meta name="description" content="James&#39; personal internet blog.">
+
+
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <a href="#main">Skip to main content</a>
+  	<nav>
+	<ul class="navigation">
+		<li><a href="/" class="nameLink">James Gallagher</a></li>
+		<ul class="floatRight">
+			<li class="linkMargin"><a href="/projects.html">Projects</a></li>
+			<li class="linkMargin"><a href="/blog.html">Blog</a></li>
+			<li class="linkMargin"><a href="/resume.html">Resume</a></li>
+			<li class="linkMargin"><a href="/links.html">Interesting Links</a></li>
+			<li><a href="/contact.html">Contact</a></li>
+		</ul>
+	</ul>
+</nav>
+    <main id="main" role="main">
+  	 <h1>The Pixel Art Gallery</h1>
+  	 <p>The Pixel Art Gallery is a project where I showcase my pixel art designs. This page was automatically generated. It will be updated every so often as I create new designs.</p>
+  	 {% for c in colors %}
+  	 	<h2>{{ c.name }}</h2>
+  	 	{% if c.description %}<p>{{ c.description }}</p>{% endif %}
+  	 	<img src="{{ c.name }}.png" height="128" width="128" />
+  	 {% endfor %}
+  </body>
+</html>

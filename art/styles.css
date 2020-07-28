@@ -1,0 +1,59 @@
+html {
+	padding: 20px;
+}
+
+body {
+	max-width: 100vh;
+	margin: auto;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation {
+	list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation .floatRight {
+  	padding-top: 20px;
+  	float: none;
+    display: block;
+  }
+}
+
+nav {
+	border-bottom: 2px #FFA500 solid;
+	margin-bottom: 10px;
+}
+
+.navigation, .blog {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.floatRight {
+	float: right;
+}
+
+.nameLink {
+	text-decoration: none;
+}
+
+.linkMargin {
+	padding-right: 10px;
+}
+
+footer {
+	border-top: 2px #FFA500 solid;
+	margin-top: 5px;
+}
+
+p, h1, h2, h3, h4, a, li {
+	font-family: "Trebuche MS", Helvetica, sans-serif;
+}
+
+a {
+	color: #6495ED;
+}
